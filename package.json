@@ -1,0 +1,30 @@
+{
+  "name": "scalajs-react-electron-webpack",
+  "version": "0.0.1",
+  "author": "trepidacious",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9",
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
+    "downshift": "^2.1.5",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "typeface-roboto": "0.0.54"
+  },
+  "devDependencies": {
+    "electron": "2.0.7",
+    "electron-builder": "^20.28.1",
+    "electron-webpack": "^2.1.2",
+    "webpack": "^4.16.5"
+  },
+  "resolutions": {
+    "upath": "^1.0.5"
+  }
+}
